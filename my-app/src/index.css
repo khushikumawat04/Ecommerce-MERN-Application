@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Poppins&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font-family: 'Abyssinica SIL', serif;
+font-family: 'Poppins', sans-serif; */
+
+/* Navbar */
+.navbar {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  text-transform: uppercase;
+  box-shadow:  0 8px 6px -6px gray;
+  border-bottom: 0px solid grey !important;
+
+}
+.nav-link{
+  font-weight: 500 !important ;
+}
+/* .active{
+  border-bottom: 2px solid black;
+} */
+
+/* Registration page */
+.register{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  flex-direction: column;
+}
+.product-link{
+  text-decoration:  none !important;
+  color: black !important;
+}
+.card img{
+  height: 150px;
+  
+}
+

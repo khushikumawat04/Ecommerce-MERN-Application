@@ -1,0 +1,68 @@
+:root {
+    --dark-blue: #001842;
+    --second: #0C3C80;
+    --third: #2A63AB;
+    --fourth: #96B7D6;
+    --fifth: #C9DCE9;
+   --box-shadow: 2px 2px  18px rgb(14 52 54/15%);
+   --gradient:linear-gradient(to right, #001842,#0C3C80);
+}
+/* create category */
+.edit-btn{
+  background:linear-gradient(to right ,var(--third),var(--second));
+  color: white;
+}
+ /* h3{
+    color: var(--second);
+} */
+ h3 {
+    font-size: 24px;
+    color: var(--dark-blue); /* Adjust color as needed */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 1px; /* Add letter spacing for clarity */
+    margin-bottom: 20px; /* Adjust spacing as needed */
+    text-align: center; /* Center align the heading */
+    /* Add text shadow for emphasis */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add a background gradient for visual appeal */
+    /* background-image: linear-gradient(to left,var(--fifth), var(--fourth)); */
+    border: 2px solid var(--second);
+    /* Add padding to ensure readability */
+    padding: 10px 10px;
+    /* Make the heading slightly rounded */
+    border-radius: 5px;
+    /* Add hover effect */
+    transition: background-color 0.3s ease;
+    width: 400px;
+    margin: auto;
+    box-shadow: var(--box-shadow);
+}
+
+/* Hover effect */
+.create-category-container h3:hover {
+   
+    color: var(--dark-blue); /* Change text color on hover */
+}
+.create-category-container table th{
+    font-size: 20px;
+}
+.create-category-container table td{
+    font-size: 15px;
+}
+
+
+/* Create product */
+.cproduct-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cproduct-container .p-btn{
+    background: var(--gradient);
+    color: white;
+}
+.cproduct-container .photo-btn{
+    background: linear-gradient(to right, var(--fifth),var(--fourth));
+    color: var(--dark-blue);
+}

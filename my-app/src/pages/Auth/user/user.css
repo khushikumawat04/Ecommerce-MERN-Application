@@ -1,0 +1,278 @@
+:root {
+    --dark-blue: #001842;
+    --second: #0C3C80;
+    --third: #2A63AB;
+    --fourth: #96B7D6;
+    --fifth: #C9DCE9;
+   --box-shadow: 2px 2px  18px rgb(14 52 54/15%);
+   --gradient:linear-gradient(to right, #001842,#0C3C80);
+}
+Link{
+    text-decoration: none;
+
+}
+/* card css */
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 100px;
+ 
+
+}
+.card{
+    background-color: C9DCE9;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    /* padding: 2px; */
+    /* height: 470px; */
+    /* border: 2px solid var(--third); */
+    
+    /*border-radius: 1rem;*/
+    /* text-align: center; */
+    color: #2A63AB;
+    border: none;
+    border-radius: 0;
+    /* height: 400px; */
+    /* width: 290px ; */
+  
+   
+}
+.card img{
+     width: 200px;
+     height: 150px;
+    margin: 20px 50px;
+
+}
+.more-btn {
+    background:linear-gradient(to right, var(--third),var(--second));
+    color: white;
+}
+.more-btn:hover{
+    color: white;
+}
+.add-btn{
+    background:var(--gradient);
+    color: white;
+    /* margin-left: 60px; */
+  
+}
+.add-btn:hover{
+    color: white;
+}
+.price-text{
+    font-weight: bold;
+}
+
+/* category */
+.category-container{
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 30px;
+border-radius: 20px;
+}
+.check-box{
+    border: 2px dashed var(--fourth);
+    padding: 10px;
+    margin: 10px 5px;
+    /* background: var(--fourth); */
+    border-radius: 10px;
+    color: var(--second);
+}
+
+
+.check-box .ant-checkbox-checked .ant-checkbox-inner::after {
+    border-color: var(--dark-blue); /* Change checkmark color when checked */
+    /* background-color: var(--dark-blue); */
+}
+.check-box .ant-checkbox-inner {
+    border-color: var(--dark-blue) !important; /* Change border color */
+    background-color: transparent !important; /* Set background color to transparent */
+}
+
+.check-box .ant-checkbox-wrapper {
+    display: flex;
+    /* align-items: center; */
+}
+
+.check-box .ant-checkbox-inner {
+    margin-right: 50px; /* Adjust the margin to add space between checkbox and label */
+}
+
+/* price filter */
+.price-container{
+   
+        background-color: #fff;
+        box-shadow: var(--box-shadow);
+        padding: 30px;
+    border-radius: 20px;
+ 
+    
+}
+.price-container .radio-btn 
+{
+    padding: 10px;
+    margin-right: 50px;
+
+}
+.price-container .reset-btn{
+    background:var(--gradient);
+    color: #fff;
+    width: 200px;
+    border-radius: 10px;
+}
+.radio-btn {
+    display: flex;
+    align-items: center;
+}
+
+.radio-btn .ant-radio-inner {
+    margin-right: 40px; /* Adjust the margin to add space between radio button and label */
+    border-color: var(--dark-blue); /* Change border color */
+    background-color: transparent; /* Set background color to transparent */
+}
+
+.radio-btn .ant-radio:hover .ant-radio-inner,
+.radio-btn .ant-radio-input:focus + .ant-radio-inner {
+    border-color: var(--dark-blue); /* Change border color on hover */
+}
+
+.radio-btn .ant-radio-checked .ant-radio-inner {
+    background-color: var(--dark-blue); /* Change background color when checked */
+    border-color: var(--dark-blue); /* Change border color when checked */
+}
+
+
+/* user profile */
+.update-user-profile{
+    padding: 30px 100px;
+    /* background: white; */
+    /* box-shadow: var(--box-shadow); */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+.update-user-profile form{
+    /* background: white; */
+    padding: 30px 50px;
+    box-shadow: var(--box-shadow);
+    width: 400px;
+    border-radius: 10px;
+    
+}
+.update-user-profile h4{
+    color: var(--second);
+    /* text-align: center; */
+
+}
+.update-user-profile button{
+    background: var(--gradient);
+    color: white;
+}
+  .punderline{
+    border: 2px solid var(--second);
+    height: 1px;
+    width: 150px;
+    background-color: var(--fourth);
+    border-radius: 2px;
+    margin-bottom: 20px;
+    
+
+}
+.active-link {
+    background-color: var(--fourth); /* Change this to the desired color */
+    color: #ffffff; /* Change this to the desired text color */
+  }
+
+  /* order */
+  .order-product-name{
+    /* font-weight: bold; */
+    font-size: 20px;
+    color: var(--dark-blueo);
+  }
+
+  /* cartpage */
+  .cart-page-item button{
+    background: var(--gradient);
+    color: white;
+    
+  }
+  .cart-page-item .cart-pname{
+    color: var(--second);
+    font-size: 20px;
+    font-weight: 600;
+  }
+ 
+  .cart-page .btn{
+    background: var(--gradient);
+    color: white;
+  }
+  .cart-page .btn:hover{
+    color: white;
+  }
+
+
+  /* login Register */
+  .form-conatiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+  }
+  .register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    /* padding: 20px 70px; */
+    /* text-align: center; */
+   
+    border-radius: 10px;
+    height: 400px;
+    background-color: var(--fifth);
+    width: 400px;
+    
+  }
+  .register form{
+    padding: 20px 70px;
+   
+    border-radius: 10px;
+    width: 400px;
+   
+  }
+  .register h3{
+    color: var(--second);
+  }
+  .register form .btn{
+    background: var(--gradient);
+  }
+  /* .login-form{
+    margin-left: 500px;
+  } */
+
+
+  /* category */
+  .category-box {
+    /* height: 200px;
+    width: 300px; */
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+
+  }
+  .category-box div{
+    border: 2px solid var(--second);
+    border-radius: 10px;
+    padding: 10px 20px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .category-box div .c-link{
+          font-size: 20px;
+          color: var(--second);
+          text-decoration: none;
+  }

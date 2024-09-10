@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "antd": "^5.9.0",
+    "braintree": "^3.21.0",
+    "concurrently": "^8.2.0",
+    "cors": "^2.8.5"
+  }
+}
