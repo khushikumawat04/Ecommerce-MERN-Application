@@ -6,6 +6,7 @@ import { toast } from 'react-toastify';
 import { useCart } from '../../../context/Cart';
 
 const CategoryProduct = () => {
+    const base_url = process.env.REACT_APP_BASE_URL;
     const [products, setProducts] = useState([]);
     const [category,setCategory] = useState([]);
     const [cart,setCart] = useCart([]);
@@ -13,7 +14,7 @@ const CategoryProduct = () => {
     const navigate = useNavigate();
       const getProductByCat = async () =>{
         try {
-            const res =  await fetch(`http://localhost:8080/api/v1/product/product-category/${params.slug}`,{
+            const res =  await fetch(`${base_url}/api/v1/product/product-category/${params.slug}`,{
                method: "GET",
                headers: {
                 "Content-Type" : "application/json"
@@ -48,7 +49,7 @@ const CategoryProduct = () => {
                   products.map((p)=>(
                    
                     <div className="card m-2"  key = {p._id}>
-                    <img src={`http://localhost:8080/api/v1/product/product-photo/${p._id}`} className="card-img-top" alt="..." />
+                    <img src={`${base_url}/api/v1/product/product-photo/${p._id}`} className="card-img-top" alt="..." />
                 
                 
                    <div className="card-body">
